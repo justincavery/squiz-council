@@ -1,0 +1,16 @@
+
+.feature-services {
+	width: 50%;
+	float:left;
+	a{
+	display: block;
+	color: $white;
+	min-height: 6em;
+	padding-top:4em;
+	background-color:$primary-color;	
+	text-align: center;
+	vertical-align: middle;//
+	border: 1px solid $primary-color-light;
+	&:hover, &:active, &:focus  {background-color:$primary-color-light;}
+	}
+}

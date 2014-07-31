@@ -1,0 +1,14 @@
+{
+    "name": "squiz-council",
+    "version": "0.0.5",
+    "devDependencies": {
+        "grunt-cli": "latest",
+        "grunt-contrib-compass": "latest",
+        "grunt-contrib-concat": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-criticalcss": "^0.1.8",
+        "grunt-imageoptim": "latest",
+        "grunt-pagespeed": "latest"
+    }
+}

@@ -1,0 +1,52 @@
+$primary-color: #383567; // rgb(56,53,103)
+$primary-color-light: #7b77a0; // rgb 123,119,160
+$secondary-color: #419ab7; //rgb 65,154,183
+$white: #fff;
+$font-stack: 'Open Sans', sans-serif;
+
+
+
+
+
+// Mixins
+
+@mixin rounded($side, $radius: 10px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+@mixin type-semibold {
+  font-weight: bold;
+}
+
+@mixin type-bold {
+  font-weight: 600;
+}
+
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+ @mixin breakpoint($point) {
+   @if $point == giagantic {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == large {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == small {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}

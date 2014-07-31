@@ -1,0 +1,66 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "globals";
+@import "typography";
+@import "grid";
+@import "forms";
+
+* {box-size:border-box;}
+
+body {
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+a {
+	color:$primary-color;
+	text-decoration: none;
+}
+
+.visibility-hidden {
+	visibility: hidden;
+}
+
+.logo {
+	width: 10em;
+	margin: 1em auto;
+	display: block;
+}
+
+.navigation-main {
+	background-color: $primary-color-light;
+	
+		a { 
+			color:$white;
+			@include type-bold;
+			text-align: center;
+			display:block;
+			line-height: 1.6em;
+			padding: 1em 0;
+			border-bottom: 1px solid;
+		&:hover, &:active, &:focus{
+			background-color:$primary-color;
+		}
+		}
+}
+
+.targeted-content {
+  font-size: 10em;
+}
+
+@import "search";
+
+@import "feature-services";
+.important-services {
+
+}
+
+
+.latest-news {
+	background-color: $secondary-color;
+	color:$white;
+}
