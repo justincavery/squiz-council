@@ -42,6 +42,15 @@ module.exports = function(grunt) {
                 filename: 'css/screen.css'
             }
         },
+        penthouse: {
+            testTask: {
+                outfile: '.tmp/out.css',
+                css: 'css/screen.css',
+                url: 'http://council.squiz',
+                width: 1300,
+                height: 900
+            },
+        },
         watch: {
             html: {
                 files: ['*.html'],
@@ -71,6 +80,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-criticalcss');
+    grunt.loadNpmTasks('grunt-penthouse');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch', 'criticalcss']);
+    grunt.registerTask('test', ['penthouse']);
+    grunt.registerTask('default', ['watch', 'test']);
+    grunt.registerTask('ccss', ['criticalcss']);
 };

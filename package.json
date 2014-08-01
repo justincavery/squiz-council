@@ -9,6 +9,7 @@
         "grunt-contrib-watch": "latest",
         "grunt-criticalcss": "^0.1.8",
         "grunt-imageoptim": "latest",
+        "grunt-penthouse": "latest",
         "grunt-pagespeed": "latest"
     }
 }
