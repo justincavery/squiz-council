@@ -1,0 +1,39 @@
+.important-information {
+	h2 {
+		text-transform: none;
+		line-height: 1.6;
+		padding-bottom: 20px;
+		}
+	li {
+		padding-left: 40px;
+		margin-bottom: 0.75em;
+		background-repeat: no-repeat;
+		background-position: -20px 0;
+		background-size: 10%;
+	}
+	a {text-transform: uppercase;
+		font-weight: 600;
+
+		span {
+			font-size: 0.75em;
+			font-weight: 300;
+			display: block;
+		}
+	}
+
+	.important-information--for-business {
+		background-image: url("/images/squiz-logo.svg");
+	}
+	.important-information--jobs-careers {
+		background-image: url("/images/squiz-logo.svg");
+
+	}
+	.important-information--social-care {
+		background-image: url("/images/squiz-logo.svg");
+	}
+	.important-information--startup-investment {
+		background-image: url("/images/squiz-logo.svg");
+
+	}
+
+}

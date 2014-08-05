@@ -69,6 +69,10 @@ h1, h2, h3, h4, h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600; }
 
+/* line 26, ../sass/_typography.scss */
+h2 {
+  font-size: 1.875em; }
+
 /* line 1, ../sass/_grid.scss */
 .grid-1-2 {
   width: 100%; }
@@ -116,15 +120,17 @@ button, .button {
   width: 100%;
   border: none;
   color: white;
-  font-size: 1.2em;
-  text-transform: uppercase; }
-  /* line 27, ../sass/_forms.scss */
+  font-size: 0.875em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400; }
+  /* line 29, ../sass/_forms.scss */
   button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {
     background-color: #7b77a0; }
 
 /* line 12, ../sass/screen.scss */
 * {
-  box-size: border-box; }
+  box-sizing: border-box; }
 
 /* line 14, ../sass/screen.scss */
 body {
@@ -162,36 +168,93 @@ a {
     .navigation-main a:hover, .navigation-main a:active, .navigation-main a:focus {
       background-color: #383567; }
 
-/* line 51, ../sass/screen.scss */
-.targeted-content {
-  font-size: 10em; }
+/* line 54, ../sass/screen.scss */
+section {
+  padding: 1em 1em; }
 
 /* line 3, ../sass/_search.scss */
 .search {
   padding: 0 0.5em; }
-  /* line 8, ../sass/_search.scss */
-  .search button {
-    color: red; }
 
 /* line 2, ../sass/_feature-services.scss */
 .feature-services {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 6, ../sass/_feature-services.scss */
+.feature-service {
   width: 50%;
   float: left; }
-  /* line 5, ../sass/_feature-services.scss */
-  .feature-services a {
-    display: block;
+  /* line 10, ../sass/_feature-services.scss */
+  .feature-service a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    min-height: 6em;
-    padding-top: 4em;
+    min-height: 10em;
     background-color: #383567;
     text-align: center;
     vertical-align: middle;
     border: 1px solid #7b77a0; }
-    /* line 14, ../sass/_feature-services.scss */
-    .feature-services a:hover, .feature-services a:active, .feature-services a:focus {
+    /* line 20, ../sass/_feature-services.scss */
+    .feature-service a:hover, .feature-service a:active, .feature-service a:focus {
       background-color: #7b77a0; }
 
-/* line 63, ../sass/screen.scss */
+/* line 2, ../sass/_important-information.scss */
+.important-information h2 {
+  text-transform: none;
+  line-height: 1.6;
+  padding-bottom: 20px; }
+/* line 7, ../sass/_important-information.scss */
+.important-information li {
+  padding-left: 40px;
+  margin-bottom: 0.75em;
+  background-repeat: no-repeat;
+  background-position: -20px 0;
+  background-size: 10%; }
+/* line 14, ../sass/_important-information.scss */
+.important-information a {
+  text-transform: uppercase;
+  font-weight: 600; }
+  /* line 17, ../sass/_important-information.scss */
+  .important-information a span {
+    font-size: 0.75em;
+    font-weight: 300;
+    display: block; }
+/* line 24, ../sass/_important-information.scss */
+.important-information .important-information--for-business {
+  background-image: url("/images/squiz-logo.svg"); }
+/* line 27, ../sass/_important-information.scss */
+.important-information .important-information--jobs-careers {
+  background-image: url("/images/squiz-logo.svg"); }
+/* line 31, ../sass/_important-information.scss */
+.important-information .important-information--social-care {
+  background-image: url("/images/squiz-logo.svg"); }
+/* line 34, ../sass/_important-information.scss */
+.important-information .important-information--startup-investment {
+  background-image: url("/images/squiz-logo.svg"); }
+
+/* line 1, ../sass/_news.scss */
 .latest-news {
   background-color: #419ab7;
   color: white; }
+  /* line 5, ../sass/_news.scss */
+  .latest-news h2 {
+    font-size: 0.875em;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    margin-bottom: 0.75em; }
+  /* line 12, ../sass/_news.scss */
+  .latest-news li {
+    margin-bottom: 0.75em; }
+  /* line 16, ../sass/_news.scss */
+  .latest-news a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white; }
+    /* line 20, ../sass/_news.scss */
+    .latest-news a span {
+      font-size: 0.75em;
+      font-weight: 300;
+      display: block; }

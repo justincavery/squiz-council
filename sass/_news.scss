@@ -1,0 +1,26 @@
+.latest-news {
+	background-color: $secondary-color;
+	color:$white;
+
+	h2 {
+		font-size: $h6;
+		font-weight: 100;
+		letter-spacing: 0.05em;
+		line-height:1.6;
+		margin-bottom:0.75em;
+	}
+	li {
+		margin-bottom: 0.75em;
+
+	}
+	a {text-transform: uppercase;
+		font-weight: 600;
+		color: $white;
+
+		span {
+			font-size: 0.75em;
+			font-weight: 300;
+			display: block;
+		}
+	}
+}

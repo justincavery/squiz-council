@@ -51,6 +51,48 @@ module.exports = function(grunt) {
                 height: 900
             },
         },
+        svgmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'svg',
+                    src: ['*.svg'],
+                    dest: 'css/svg-source'
+                }]
+            }
+        },
+        imageoptim: {
+            mytask: {
+                src: ['images', 'css']
+            }
+        },
+        grunticon: {
+            foo: {
+                files: [{
+                    expand: true,
+                    cwd: 'css/svg-source',
+                    src: ['*.svg', '*.png'],
+                    dest: "css/svg"
+                }],
+                options: {
+
+                }
+            }
+        },
+        pagespeed: {
+            options: {
+                nokey: true,
+                url: "http://developers.google.com"
+            },
+            prod: {
+                options: {
+                    url: "http://responsivedesign.is",
+                    locale: "en_GB",
+                    strategy: "mobile",
+                    threshold: 80
+                }
+            },
+        },
         watch: {
             html: {
                 files: ['*.html'],
@@ -82,7 +124,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-criticalcss');
     grunt.loadNpmTasks('grunt-penthouse');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-grunticon');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-imageoptim');
+    grunt.loadNpmTasks('grunt-pagespeed');
     grunt.registerTask('test', ['penthouse']);
     grunt.registerTask('default', ['watch', 'test']);
-    grunt.registerTask('ccss', ['criticalcss']);
+    grunt.registerTask('ccss', ['criticalcss', 'pagespeed']);
+    grunt.registerTask('imageopt', ['grunticon', 'svgmin', 'imageoptim']);
 };

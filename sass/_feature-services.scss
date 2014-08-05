@@ -1,12 +1,18 @@
 
 .feature-services {
+	padding-left: 0;
+	padding-right: 0;
+}
+.feature-service {
 	width: 50%;
 	float:left;
+
 	a{
-	display: block;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 	color: $white;
-	min-height: 6em;
-	padding-top:4em;
+	min-height: 10em;
 	background-color:$primary-color;	
 	text-align: center;
 	vertical-align: middle;//

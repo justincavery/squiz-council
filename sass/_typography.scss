@@ -7,3 +7,22 @@ h1, h2, h3, h4, h5 {
     	font-family: $font-stack;
    	 	font-weight: 600;
 }
+
+
+//$h1: ;
+
+$h2: 1.875em;
+
+//$h3: ;
+
+//$h4: ;
+
+//$h5: ;
+
+$h6: 0.875em;
+
+
+
+h2 {
+	font-size: $h2;
+}
