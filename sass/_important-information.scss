@@ -1,15 +1,26 @@
 .important-information {
 	h2 {
+		@include heading-3;
 		text-transform: none;
-		line-height: 1.6;
 		padding-bottom: 20px;
 		}
 	li {
-		padding-left: 40px;
-		margin-bottom: 0.75em;
+		padding-left: 25px;
 		background-repeat: no-repeat;
-		background-position: -20px 0;
-		background-size: 10%;
+		background-position: 0 0;
+		background-size: fill;
+		fill: $primary-color;
+		&:before {
+			content: "";
+			width: 25px;
+			height: 25px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100%;
+			float: left;
+			margin-left: -30px;
+			margin-right: 5px;
+		}
 	}
 	a {text-transform: uppercase;
 		font-weight: 600;
@@ -21,18 +32,18 @@
 		}
 	}
 
-	.important-information--for-business {
-		background-image: url("/images/squiz-logo.svg");
-	}
-	.important-information--jobs-careers {
-		background-image: url("/images/squiz-logo.svg");
+	.important-information--for-business:before {
+		background-image: url("/css/svg-source/council_services.svg");
+			}
+	.important-information--jobs-careers:before {
+		background-image: url("/css/svg-source/jobs.svg");
 
 	}
-	.important-information--social-care {
-		background-image: url("/images/squiz-logo.svg");
+	.important-information--social-care:before {
+		background-image: url("/css/svg-source/social_care.svg");
 	}
-	.important-information--startup-investment {
-		background-image: url("/images/squiz-logo.svg");
+	.important-information--startup-investment:before {
+		background-image: url("/css/svg-source/startups.svg");
 
 	}
 

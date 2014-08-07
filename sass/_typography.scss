@@ -1,28 +1,114 @@
 html { font-family: $font-stack;}
 
-
-h1, h2, h3, h4, h5 {
-		text-transform: uppercase;
-		text-rendering: optimizeLegibility;
-    	font-family: $font-stack;
-   	 	font-weight: 600;
+@mixin title-face {
+  font-family: $font-stack;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
 }
 
 
-//$h1: ;
-
-$h2: 1.875em;
-
-//$h3: ;
-
-//$h4: ;
-
-//$h5: ;
-
-$h6: 0.875em;
+// typographic mixins and extends
 
 
+
+@mixin copy-face {
+  font-family: $font-stack;
+  font-weight: normal;
+}
+
+@mixin heading-link {
+  color: $heading-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: darken($heading-color, 15%);
+    text-decoration: none;
+    border-bottom:  1px dotted $primary-color-light;
+  }
+}
+
+@mixin heading {
+  @include title-face;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: $heading-color;
+  a {
+    @include heading-link;
+  }
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 2.5em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 1.875em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.4em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.2em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.875em;
+}
+
+h1 {
+  @include heading-1;
+}
 
 h2 {
-	font-size: $h2;
+  @include heading-2;
 }
+
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}
+
+h6 {
+  @include heading-6;
+}
+/*
+@mixin link {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+@mixin link-reverse {
+  color: $background-color-subtle; 
+  &:hover, &:focus {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+
+*/

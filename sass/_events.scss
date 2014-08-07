@@ -1,0 +1,33 @@
+.next-events {
+	background-color: $secondary-color;
+	color: $white;
+	h2 { 
+		@include heading-6;
+		color: $white;
+		font-weight: 100;
+		letter-spacing: 0.05em;
+		line-height:1.6;
+		margin-bottom:0.75em;
+	}
+	ol {
+		margin-bottom: 2em;
+	}
+	a {color: $white;
+		display: block;
+		padding: 1em 0;}
+	date {
+		display: block;
+		float:left;
+		width: 50px;
+		font-size: 1.1em;
+		clear:left;
+		text-transform: uppercase;
+		span {
+			display:block;
+		}
+	}
+}
+
+.next-events--event {
+	text-transform: uppercase;
+}

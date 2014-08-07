@@ -2,12 +2,11 @@ $primary-color: #383567; // rgb(56,53,103)
 $primary-color-light: #7b77a0; // rgb 123,119,160
 $secondary-color: #419ab7; //rgb 65,154,183
 $white: #fff;
-$font-stack: 'Open Sans', sans-serif;
-
-
-
-
-
+$font-stack: 'Open Sans',helvetica, arial, sans-serif;
+$link-color: $primary-color;
+$link-color-hover: $primary-color;
+$heading-color: $primary-color;
+$heading-link: $heading-color;
 // Mixins
 
 @mixin rounded($side, $radius: 10px) {
@@ -16,13 +15,6 @@ $font-stack: 'Open Sans', sans-serif;
   -webkit-border-#{$side}-radius: $radius;
 }
 
-@mixin type-semibold {
-  font-weight: bold;
-}
-
-@mixin type-bold {
-  font-weight: 600;
-}
 
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
     -webkit-transition: $what $time $how;

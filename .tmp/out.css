@@ -18,11 +18,11 @@ a img {
 
 
 html {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", helvetica, arial, sans-serif; }
 
 
 * {
-  box-size: border-box; }
+  box-sizing: border-box; }
 
 
 body {

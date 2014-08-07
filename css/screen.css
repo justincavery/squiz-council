@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,56 +23,186 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 /* line 1, ../sass/_typography.scss */
 html {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", helvetica, arial, sans-serif; }
 
-/* line 4, ../sass/_typography.scss */
-h1, h2, h3, h4, h5 {
+/* line 71, ../sass/_typography.scss */
+h1 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600; }
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 2.5em; }
+  /* line 36, ../sass/_typography.scss */
+  h1 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h1 a:hover, h1 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
 
-/* line 26, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 h2 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
   font-size: 1.875em; }
+  /* line 36, ../sass/_typography.scss */
+  h2 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h2 a:hover, h2 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
 
+/* line 79, ../sass/_typography.scss */
+h3 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 1.4em; }
+  /* line 36, ../sass/_typography.scss */
+  h3 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h3 a:hover, h3 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+
+/* line 83, ../sass/_typography.scss */
+h4 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 1.2em; }
+  /* line 36, ../sass/_typography.scss */
+  h4 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h4 a:hover, h4 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+
+/* line 87, ../sass/_typography.scss */
+h5 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 1em; }
+  /* line 36, ../sass/_typography.scss */
+  h5 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h5 a:hover, h5 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+
+/* line 91, ../sass/_typography.scss */
+h6 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 0.875em; }
+  /* line 36, ../sass/_typography.scss */
+  h6 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    h6 a:hover, h6 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+
+/*
+@mixin link {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+@mixin link-reverse {
+  color: $background-color-subtle; 
+  &:hover, &:focus {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+
+*/
 /* line 1, ../sass/_grid.scss */
 .grid-1-2 {
   width: 100%; }
@@ -97,22 +227,26 @@ h2 {
     .grid-1-3 {
       width: 33%; } }
 
-/* line 1, ../sass/_forms.scss */
-form {
-  display: ssss; }
-
-/* line 7, ../sass/_forms.scss */
+/* line 6, ../sass/_forms.scss */
 input {
   width: 100%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   border: none;
   text-align: center;
   font-size: 1.2em;
   border: 1px solid #383567;
-  margin: 0.5em 0; }
+  margin: 0.25em 0; }
 
-/* line 17, ../sass/_forms.scss */
+/* line 16, ../sass/_forms.scss */
 button, .button {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 0.875em;
   display: block;
   line-height: 1.6;
   padding: 1em 0.5em;
@@ -120,11 +254,19 @@ button, .button {
   width: 100%;
   border: none;
   color: white;
-  font-size: 0.875em;
   text-transform: uppercase;
   text-align: center;
   font-weight: 400; }
-  /* line 29, ../sass/_forms.scss */
+  /* line 36, ../sass/_typography.scss */
+  button a, .button a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    button a:hover, button a:focus, .button a:hover, .button a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+  /* line 28, ../sass/_forms.scss */
   button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {
     background-color: #7b77a0; }
 
@@ -143,32 +285,38 @@ a {
   text-decoration: none; }
 
 /* line 24, ../sass/screen.scss */
+li {
+  margin-bottom: 0.75em; }
+
+/* line 29, ../sass/screen.scss */
 .visibility-hidden {
   visibility: hidden; }
 
-/* line 28, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .logo {
   width: 10em;
   margin: 1em auto;
   display: block; }
 
-/* line 34, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .navigation-main {
   background-color: #7b77a0; }
-  /* line 37, ../sass/screen.scss */
+  /* line 41, ../sass/screen.scss */
+  .navigation-main li {
+    margin-bottom: 0; }
+  /* line 44, ../sass/screen.scss */
   .navigation-main a {
     color: white;
-    font-weight: 600;
     text-align: center;
     display: block;
     line-height: 1.6em;
     padding: 1em 0;
     border-bottom: 1px solid; }
-    /* line 45, ../sass/screen.scss */
+    /* line 51, ../sass/screen.scss */
     .navigation-main a:hover, .navigation-main a:active, .navigation-main a:focus {
       background-color: #383567; }
 
-/* line 54, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 section {
   padding: 1em 1em; }
 
@@ -202,59 +350,158 @@ section {
 
 /* line 2, ../sass/_important-information.scss */
 .important-information h2 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 1.4em;
   text-transform: none;
-  line-height: 1.6;
   padding-bottom: 20px; }
+  /* line 36, ../sass/_typography.scss */
+  .important-information h2 a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    .important-information h2 a:hover, .important-information h2 a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
 /* line 7, ../sass/_important-information.scss */
 .important-information li {
-  padding-left: 40px;
-  margin-bottom: 0.75em;
+  padding-left: 25px;
   background-repeat: no-repeat;
-  background-position: -20px 0;
-  background-size: 10%; }
-/* line 14, ../sass/_important-information.scss */
+  background-position: 0 0;
+  background-size: fill;
+  fill: #383567; }
+  /* line 13, ../sass/_important-information.scss */
+  .important-information li:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    float: left;
+    margin-left: -30px;
+    margin-right: 5px; }
+/* line 25, ../sass/_important-information.scss */
 .important-information a {
   text-transform: uppercase;
   font-weight: 600; }
-  /* line 17, ../sass/_important-information.scss */
+  /* line 28, ../sass/_important-information.scss */
   .important-information a span {
     font-size: 0.75em;
     font-weight: 300;
     display: block; }
-/* line 24, ../sass/_important-information.scss */
-.important-information .important-information--for-business {
-  background-image: url("/images/squiz-logo.svg"); }
-/* line 27, ../sass/_important-information.scss */
-.important-information .important-information--jobs-careers {
-  background-image: url("/images/squiz-logo.svg"); }
-/* line 31, ../sass/_important-information.scss */
-.important-information .important-information--social-care {
-  background-image: url("/images/squiz-logo.svg"); }
-/* line 34, ../sass/_important-information.scss */
-.important-information .important-information--startup-investment {
-  background-image: url("/images/squiz-logo.svg"); }
+/* line 35, ../sass/_important-information.scss */
+.important-information .important-information--for-business:before {
+  background-image: url("/css/svg-source/council_services.svg"); }
+/* line 38, ../sass/_important-information.scss */
+.important-information .important-information--jobs-careers:before {
+  background-image: url("/css/svg-source/jobs.svg"); }
+/* line 42, ../sass/_important-information.scss */
+.important-information .important-information--social-care:before {
+  background-image: url("/css/svg-source/social_care.svg"); }
+/* line 45, ../sass/_important-information.scss */
+.important-information .important-information--startup-investment:before {
+  background-image: url("/css/svg-source/startups.svg"); }
 
 /* line 1, ../sass/_news.scss */
 .latest-news {
   background-color: #419ab7;
   color: white; }
-  /* line 5, ../sass/_news.scss */
+  /* line 4, ../sass/_news.scss */
   .latest-news h2 {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0.35em;
+    line-height: 1.2;
+    color: #383567;
     font-size: 0.875em;
     font-weight: 100;
     letter-spacing: 0.05em;
     line-height: 1.6;
-    margin-bottom: 0.75em; }
+    margin-bottom: 0.75em;
+    color: white; }
+    /* line 36, ../sass/_typography.scss */
+    .latest-news h2 a {
+      color: #383567;
+      text-decoration: none; }
+      /* line 24, ../sass/_typography.scss */
+      .latest-news h2 a:hover, .latest-news h2 a:focus {
+        color: #1d1b34;
+        text-decoration: none;
+        border-bottom: 1px dotted #7b77a0; }
   /* line 12, ../sass/_news.scss */
-  .latest-news li {
-    margin-bottom: 0.75em; }
-  /* line 16, ../sass/_news.scss */
   .latest-news a {
     text-transform: uppercase;
-    font-weight: 600;
     color: white; }
-    /* line 20, ../sass/_news.scss */
+    /* line 15, ../sass/_news.scss */
     .latest-news a span {
       font-size: 0.75em;
       font-weight: 300;
       display: block; }
+
+/* line 1, ../sass/_events.scss */
+.next-events {
+  background-color: #419ab7;
+  color: white; }
+  /* line 4, ../sass/_events.scss */
+  .next-events h2 {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0.35em;
+    line-height: 1.2;
+    color: #383567;
+    font-size: 0.875em;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    margin-bottom: 0.75em; }
+    /* line 36, ../sass/_typography.scss */
+    .next-events h2 a {
+      color: #383567;
+      text-decoration: none; }
+      /* line 24, ../sass/_typography.scss */
+      .next-events h2 a:hover, .next-events h2 a:focus {
+        color: #1d1b34;
+        text-decoration: none;
+        border-bottom: 1px dotted #7b77a0; }
+  /* line 12, ../sass/_events.scss */
+  .next-events ol {
+    margin-bottom: 2em; }
+  /* line 15, ../sass/_events.scss */
+  .next-events a {
+    color: white;
+    display: block;
+    padding: 1em 0; }
+  /* line 18, ../sass/_events.scss */
+  .next-events date {
+    display: block;
+    float: left;
+    width: 50px;
+    font-size: 1.1em;
+    clear: left;
+    text-transform: uppercase; }
+    /* line 25, ../sass/_events.scss */
+    .next-events date span {
+      display: block; }
+
+/* line 31, ../sass/_events.scss */
+.next-events--event {
+  text-transform: uppercase; }
+
+/* line 2, ../sass/_subscribe.scss */
+.subscribe h2 {
+  text-transform: none; }
+/* line 5, ../sass/_subscribe.scss */
+.subscribe form {
+  margin-top: 1em; }

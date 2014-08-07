@@ -1,1 +1,1 @@
-function watchsize(watch){console.log(watch>10?"watch is huge!!!@!":"watch is small !")}console.log("gaz is a cunt"),console.log("Grunt Testing"),console.log("all the single ladies"),console.log(watchsize(11));
+function watchsize(watch){console.log(watch>10?"watch is huge!!!@!":"watch is small !")}function ntowatch(watch){console.log(watch>10?"watch is huge!!!@!":"watch is small !")}console.log("gaz is a cool dude"),console.log("Grunt Testing"),console.log("all the single ladies"),console.log(watchsize(11));

@@ -21,6 +21,11 @@ a {
 	text-decoration: none;
 }
 
+li {
+	margin-bottom: 0.75em;
+}
+
+
 .visibility-hidden {
 	visibility: hidden;
 }
@@ -33,10 +38,11 @@ a {
 
 .navigation-main {
 	background-color: $primary-color-light;
-	
+		li {
+			margin-bottom: 0;
+		}
 		a { 
 			color:$white;
-			@include type-bold;
 			text-align: center;
 			display:block;
 			line-height: 1.6em;
@@ -58,4 +64,5 @@ section { padding: 1em 1em;}
 @import "feature-services";
 @import "important-information";
 @import "news";
-
+@import "events";
+@import "subscribe";

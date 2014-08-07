@@ -1,20 +1,15 @@
 .latest-news {
 	background-color: $secondary-color;
 	color:$white;
-
 	h2 {
-		font-size: $h6;
+		@include heading-6;
 		font-weight: 100;
 		letter-spacing: 0.05em;
 		line-height:1.6;
 		margin-bottom:0.75em;
-	}
-	li {
-		margin-bottom: 0.75em;
-
+		color: $white;
 	}
 	a {text-transform: uppercase;
-		font-weight: 600;
 		color: $white;
 
 		span {
