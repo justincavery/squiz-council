@@ -1,8 +1,30 @@
 .subscribe {
+	@include breakpoint(tablet){
+		float:left;
+		width: 58%;
+	}
 	h2 {
 		text-transform: none;
 	}
 	form {
 		margin-top:1em;
+	}
+	input {
+		@include breakpoint(tablet){
+			width: 49%;
+			margin-right:2%;
+			float:left;
+			&:last-of-type { width: 100%;}
+			&:nth-child(even) {margin-right:0}
+		}
+	}
+	button {
+		width: 100%;
+		@include breakpoint(tablet){
+			float:right;
+			width: inherit;
+			padding-left:2em;
+			padding-right:2em;
+		}
 	}
 }

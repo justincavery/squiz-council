@@ -1,7 +1,6 @@
 
 .feature-services {
-	padding-left: 0;
-	padding-right: 0;
+	padding: 0;
 }
 .feature-service {
 	width: 50%;
@@ -11,6 +10,7 @@
 	min-height: 10em;
 	@include breakpoint(tablet) {
 		width: 33.33%;
+		min-height: 13em;
 	}
 	a {
 	display:table-cell;

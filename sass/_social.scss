@@ -1,7 +1,7 @@
 .social {
+
 	li {
 		display:inline-block;
-	//	background-color:#fff;
 	}
 }
 
@@ -39,9 +39,4 @@
 }
 .googleplus:before {
 	background-image: url("/css/svg-source/googleplus.svg");
-}
-
-.footer {
-	@include heading-6;
-	a { color: #ffffff;}
 }

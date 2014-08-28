@@ -3,9 +3,14 @@
 .search {
 	padding:0 0.5em;
 	input {
-
+		@include breakpoint(tablet){
+		border:none;	
+		}
+		
 		}
 	button {
-
+		@include breakpoint(tablet){
+			display:none;
+		}
 	}
 }

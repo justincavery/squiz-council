@@ -1,6 +1,10 @@
 .next-events {
 	background-color: $secondary-color;
 	color: $white;
+	@include breakpoint(tablet){
+		float:left;
+		width: 42%;
+	}
 	h2 { 
 		@include heading-6;
 		color: $white;

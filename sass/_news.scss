@@ -1,6 +1,10 @@
 .latest-news {
 	background-color: $secondary-color;
 	color:$white;
+	@include breakpoint(tablet){
+		width:42%;
+		float:left;
+	}
 	h2 {
 		@include heading-6;
 		font-weight: 100;

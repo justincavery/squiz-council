@@ -28,4 +28,8 @@ button, .button {
 	&:hover, &:active, &:focus {
 		background-color: $primary-color-light;
 	}
+	@include breakpoint(tablet){
+		width:inherit;
+		padding: 1em 1em;
+	}
 }

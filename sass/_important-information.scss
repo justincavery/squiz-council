@@ -1,4 +1,8 @@
 .important-information {
+	@include breakpoint(tablet){
+		float:left;
+		width: 58%;
+	}
 	h2 {
 		@include heading-3;
 		text-transform: none;

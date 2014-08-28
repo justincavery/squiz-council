@@ -12,8 +12,8 @@
 * {box-sizing:border-box;}
 
 body {
-	font-size: 16px;
-	line-height: 1.2em;
+	font-size: 100%;
+	line-height: 1.5;
 }
 
 a {
@@ -28,26 +28,54 @@ li {
 
 .visibility-hidden {
 	visibility: hidden;
+	line-height: 0;
+	margin: 0;
 }
 
+.wrapper {
+	max-width: 64em; margin: 0 auto;
+}
+.header {
+	@include breakpoint(tablet){
+		min-height: 120px;
+	}
+	}
 .logo {
 	width: 10em;
 	margin: 1em auto;
 	display: block;
+
 }
 
 .navigation-main {
 	background-color: $primary-color-light;
+	@include breakpoint(tablet){
+		max-width: 58em;
+		margin: 0 auto;
+		position: relative;
+		top:-2em;
+	}
+
 		li {
 			margin-bottom: 0;
+			@include breakpoint(tablet){
+				float:left;
+				width: 16.6666667%;
+			}
 		}
 		a { 
 			color:$white;
+			background-color: $primary-color-light;
 			text-align: center;
 			display:block;
 			line-height: 1.6em;
 			padding: 1em 0;
 			border-bottom: 1px solid;
+			text-transform: uppercase;
+			@include breakpoint(tablet){
+				@include heading-6;
+				color: #fff;
+			}
 		&:hover, &:active, &:focus{
 			background-color:$primary-color;
 		}
@@ -55,9 +83,25 @@ li {
 }
 
 .targeted-content {
+	@include breakpoint(tablet){
+		min-height: 245px;
+		background: url("/images/background.jpg") no-repeat center center;
+		background-size: cover;
+	}
 }
 
-section, footer { padding: 1em 1em; max-width: 64em; margin: 0 auto;}
+section, footer { 
+	padding: 1em 1em;
+	@include breakpoint(tablet){
+		padding: 2em;
+	}
+}
+
+.home-boxed-layout {
+	section:nth-child(2n+1) {
+		clear:left;
+	}
+}
 
 @import "search";
 
@@ -66,6 +110,6 @@ section, footer { padding: 1em 1em; max-width: 64em; margin: 0 auto;}
 @import "news";
 @import "events";
 @import "subscribe";
-@import "contact";
+@import "footer";
 @import "social";
 
