@@ -1,0 +1,41 @@
+html, body, div,
+a, img, header{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+
+html {
+  line-height: 1; }
+
+
+a img {
+  border: none; } header{
+  display: block; }
+
+
+html {
+  font-family: "Open Sans", helvetica, arial, sans-serif; }
+
+
+* {
+  box-sizing: border-box; }
+
+
+body {
+  font-size: 16px;
+  line-height: 1.2em; }
+
+
+a {
+  color: #383567;
+  text-decoration: none; }
+
+
+.logo {
+  width: 10em;
+  margin: 1em auto;
+  display: block; }

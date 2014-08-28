@@ -57,7 +57,7 @@ li {
 .targeted-content {
 }
 
-section { padding: 1em 1em;}
+section, footer { padding: 1em 1em; max-width: 64em; margin: 0 auto;}
 
 @import "search";
 
@@ -66,3 +66,6 @@ section { padding: 1em 1em;}
 @import "news";
 @import "events";
 @import "subscribe";
+@import "contact";
+@import "social";
+

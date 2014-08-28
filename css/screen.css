@@ -317,8 +317,10 @@ li {
       background-color: #383567; }
 
 /* line 60, ../sass/screen.scss */
-section {
-  padding: 1em 1em; }
+section, footer {
+  padding: 1em 1em;
+  max-width: 64em;
+  margin: 0 auto; }
 
 /* line 3, ../sass/_search.scss */
 .search {
@@ -332,21 +334,60 @@ section {
 /* line 6, ../sass/_feature-services.scss */
 .feature-service {
   width: 50%;
-  float: left; }
-  /* line 10, ../sass/_feature-services.scss */
+  float: left;
+  margin-bottom: 0;
+  display: table;
+  min-height: 10em; }
+  @media (min-width: 50em) {
+    /* line 6, ../sass/_feature-services.scss */
+    .feature-service {
+      width: 33.33%; } }
+  /* line 15, ../sass/_feature-services.scss */
   .feature-service a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: table-cell;
     color: white;
     min-height: 10em;
     background-color: #383567;
     text-align: center;
     vertical-align: middle;
     border: 1px solid #7b77a0; }
-    /* line 20, ../sass/_feature-services.scss */
+    /* line 26, ../sass/_feature-services.scss */
     .feature-service a:hover, .feature-service a:active, .feature-service a:focus {
       background-color: #7b77a0; }
+    /* line 27, ../sass/_feature-services.scss */
+    .feature-service a:before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: fill;
+      display: block;
+      margin: 0 auto 1em; }
+
+/* line 40, ../sass/_feature-services.scss */
+.feature-services--coucil-tax:before {
+  background-image: url("/css/svg-source/council_tax.svg"); }
+
+/* line 44, ../sass/_feature-services.scss */
+.feature-services--citizenship:before {
+  background-image: url("/css/svg-source/citizenship_matters.svg"); }
+
+/* line 48, ../sass/_feature-services.scss */
+.feature-services--waste-disposal:before {
+  background-image: url("/css/svg-source/waste_disposal.svg"); }
+
+/* line 52, ../sass/_feature-services.scss */
+.feature-services--licensing:before {
+  background-image: url("/css/svg-source/licensing.svg"); }
+
+/* line 56, ../sass/_feature-services.scss */
+.feature-services--parking:before {
+  background-image: url("/css/svg-source/parking.svg"); }
+
+/* line 60, ../sass/_feature-services.scss */
+.feature-services--planning:before {
+  background-image: url("/css/svg-source/planning.svg"); }
 
 /* line 2, ../sass/_important-information.scss */
 .important-information h2 {
@@ -465,7 +506,7 @@ section {
     font-weight: 100;
     letter-spacing: 0.05em;
     line-height: 1.6;
-    margin-bottom: 0.75em; }
+    margin-bottom: 0.756em; }
     /* line 36, ../sass/_typography.scss */
     .next-events h2 a {
       color: #383567;
@@ -505,3 +546,91 @@ section {
 /* line 5, ../sass/_subscribe.scss */
 .subscribe form {
   margin-top: 1em; }
+
+/* line 1, ../sass/_contact.scss */
+.footer-section {
+  color: #fff;
+  background-color: #22203d; }
+  /* line 4, ../sass/_contact.scss */
+  .footer-section h2 {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0.35em;
+    line-height: 1.2;
+    color: #383567;
+    font-size: 1.2em;
+    color: #fff; }
+    /* line 36, ../sass/_typography.scss */
+    .footer-section h2 a {
+      color: #383567;
+      text-decoration: none; }
+      /* line 24, ../sass/_typography.scss */
+      .footer-section h2 a:hover, .footer-section h2 a:focus {
+        color: #1d1b34;
+        text-decoration: none;
+        border-bottom: 1px dotted #7b77a0; }
+
+/* line 2, ../sass/_social.scss */
+.social li {
+  display: inline-block; }
+
+/* line 8, ../sass/_social.scss */
+.social--channel {
+  text-indent: -99999px; }
+  /* line 10, ../sass/_social.scss */
+  .social--channel:before {
+    content: " ";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    margin: 0.25em auto; }
+  /* line 19, ../sass/_social.scss */
+  .social--channel a {
+    display: block;
+    width: 45px;
+    height: 0px;
+    text-indent: -9999px;
+    margin: 0; }
+
+/* line 29, ../sass/_social.scss */
+.facebook:before {
+  background-image: url("/css/svg-source/facebook.svg"); }
+
+/* line 33, ../sass/_social.scss */
+.twitter:before {
+  background-image: url("/css/svg-source/twitter.svg"); }
+
+/* line 37, ../sass/_social.scss */
+.vimeo:before {
+  background-image: url("/css/svg-source/vimeo.svg"); }
+
+/* line 40, ../sass/_social.scss */
+.googleplus:before {
+  background-image: url("/css/svg-source/googleplus.svg"); }
+
+/* line 44, ../sass/_social.scss */
+.footer {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #383567;
+  font-size: 0.875em; }
+  /* line 36, ../sass/_typography.scss */
+  .footer a {
+    color: #383567;
+    text-decoration: none; }
+    /* line 24, ../sass/_typography.scss */
+    .footer a:hover, .footer a:focus {
+      color: #1d1b34;
+      text-decoration: none;
+      border-bottom: 1px dotted #7b77a0; }
+  /* line 46, ../sass/_social.scss */
+  .footer a {
+    color: #ffffff; }

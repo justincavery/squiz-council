@@ -6,17 +6,57 @@
 .feature-service {
 	width: 50%;
 	float:left;
-
-	a{
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-	color: $white;
+	margin-bottom: 0;
+	display: table;
+	min-height: 10em;
+	@include breakpoint(tablet) {
+		width: 33.33%;
+	}
+	a {
+	display:table-cell;
+	//display: flex;
+  	//align-items: center;
+  	//justify-content: center;
+  	color: $white;
 	min-height: 10em;
 	background-color:$primary-color;	
 	text-align: center;
 	vertical-align: middle;//
 	border: 1px solid $primary-color-light;
 	&:hover, &:active, &:focus  {background-color:$primary-color-light;}
+	&:before {
+			content: "";
+			width: 60px;
+			height: 60px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: fill;
+			display: block;
+			margin: 0 auto 1em;
+		}
 	}
+}
+
+.feature-services--coucil-tax:before {
+	background-image: url("/css/svg-source/council_tax.svg");
+}
+
+.feature-services--citizenship:before {
+	background-image: url("/css/svg-source/citizenship_matters.svg");	
+}
+
+.feature-services--waste-disposal:before {
+	background-image: url("/css/svg-source/waste_disposal.svg");	
+}
+
+.feature-services--licensing:before {
+	background-image: url("/css/svg-source/licensing.svg");	
+}
+
+.feature-services--parking:before {
+	background-image: url("/css/svg-source/parking.svg");	
+}
+
+.feature-services--planning:before {
+	background-image: url("/css/svg-source/planning.svg");	
 }

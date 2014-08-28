@@ -44,12 +44,21 @@ module.exports = function(grunt) {
         },
         penthouse: {
             testTask: {
-                outfile: '.tmp/out.css',
+                outfile: '.tmp/critical.css',
                 css: 'css/screen.css',
                 url: 'http://council.squiz',
                 width: 1300,
                 height: 900
             },
+        },
+        cssmin: {
+            files: [{
+                expand: true,
+                cwd: '.tmp/',
+                src: '*.css',
+                dest: 'css/',
+                ext: '.min.css'
+            }]
         },
         svgmin: {
             dist: {
@@ -114,7 +123,6 @@ module.exports = function(grunt) {
                     livereload: true,
                 }
             }
-
         }
     });
 
@@ -128,8 +136,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-imageoptim');
     grunt.loadNpmTasks('grunt-pagespeed');
-    grunt.registerTask('test', ['penthouse']);
-    grunt.registerTask('default', ['watch', 'test']);
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.registerTask('critical', ['penthouse', 'cssmin']);
+    grunt.registerTask('default', ['watch', 'critical']);
     grunt.registerTask('ccss', ['criticalcss', 'pagespeed']);
     grunt.registerTask('imageopt', ['grunticon', 'svgmin', 'imageoptim']);
 };

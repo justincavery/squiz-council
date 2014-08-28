@@ -4,6 +4,10 @@
 
 .icon-council_tax { background-image: url('png/council_tax.png'); background-repeat: no-repeat; }
 
+.icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon-googleplus { background-image: url('png/googleplus.png'); background-repeat: no-repeat; }
+
 .icon-jobs { background-image: url('png/jobs.png'); background-repeat: no-repeat; }
 
 .icon-licensing { background-image: url('png/licensing.png'); background-repeat: no-repeat; }
@@ -12,9 +16,15 @@
 
 .icon-planning { background-image: url('png/planning.png'); background-repeat: no-repeat; }
 
+.icon-rss { background-image: url('png/rss.png'); background-repeat: no-repeat; }
+
 .icon-social_care { background-image: url('png/social_care.png'); background-repeat: no-repeat; }
 
 .icon-startups { background-image: url('png/startups.png'); background-repeat: no-repeat; }
+
+.icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
+
+.icon-vimeo { background-image: url('png/vimeo.png'); background-repeat: no-repeat; }
 
 .icon-waste_disposal { background-image: url('png/waste_disposal.png'); background-repeat: no-repeat; }
 

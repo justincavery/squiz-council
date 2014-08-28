@@ -1,0 +1,8 @@
+.footer-section {
+	color: #fff;
+	background-color: $primary-color-dark;
+	h2 {
+		@include heading-4;
+		color: #fff;
+	}
+}

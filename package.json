@@ -1,17 +1,18 @@
 {
-    "name": "squiz-council",
-    "version": "0.0.6",
-    "devDependencies": {
-        "grunt-cli": "latest",
-        "grunt-contrib-compass": "latest",
-        "grunt-contrib-concat": "latest",
-        "grunt-contrib-uglify": "latest",
-        "grunt-contrib-watch": "latest",
-        "grunt-criticalcss": "^0.1.8",
-        "grunt-grunticon": "latest",
-        "grunt-imageoptim": "^1.4.1",
-        "grunt-pagespeed": "^0.3.0",
-        "grunt-penthouse": "latest",
-        "grunt-svgmin": "^0.4.0"
-    }
+  "name": "squiz-council",
+  "version": "0.0.6",
+  "devDependencies": {
+    "grunt-cli": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-criticalcss": "^0.1.8",
+    "grunt-grunticon": "latest",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-pagespeed": "^0.3.0",
+    "grunt-penthouse": "latest",
+    "grunt-svgmin": "^0.4.0"
+  }
 }
