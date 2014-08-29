@@ -305,7 +305,6 @@ li {
 
 /* line 35, ../sass/screen.scss */
 .wrapper {
-  max-width: 64em;
   margin: 0 auto; }
 
 @media (min-width: 50em) {
@@ -358,7 +357,8 @@ li {
         line-height: 1.2;
         color: #383567;
         font-size: 0.875em;
-        color: #fff; }
+        color: #fff;
+        border-bottom: none; }
         /* line 36, ../sass/_typography.scss */
         .navigation-main a a {
           color: #383567;
@@ -368,26 +368,30 @@ li {
             color: #1d1b34;
             text-decoration: none;
             border-bottom: 1px dotted #7b77a0; } }
-    /* line 79, ../sass/screen.scss */
+    /* line 80, ../sass/screen.scss */
     .navigation-main a:hover, .navigation-main a:active, .navigation-main a:focus {
       background-color: #383567; }
 
+/* line 86, ../sass/screen.scss */
+.targeted-content, .feature-services {
+  padding: 0 10%; }
+
 @media (min-width: 50em) {
-  /* line 85, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   .targeted-content {
     min-height: 245px;
     background: url("/images/background.jpg") no-repeat center center;
     background-size: cover; } }
 
-/* line 93, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 section, footer {
   padding: 1em 1em; }
   @media (min-width: 50em) {
-    /* line 93, ../sass/screen.scss */
+    /* line 98, ../sass/screen.scss */
     section, footer {
       padding: 2em; } }
 
-/* line 101, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .home-boxed-layout section:nth-child(2n+1) {
   clear: left; }
 
@@ -426,12 +430,11 @@ section, footer {
     min-height: 10em;
     background-color: #383567;
     text-align: center;
-    vertical-align: middle;
-    border: 1px solid #7b77a0; }
-    /* line 26, ../sass/_feature-services.scss */
+    vertical-align: middle; }
+    /* line 25, ../sass/_feature-services.scss */
     .feature-service a:hover, .feature-service a:active, .feature-service a:focus {
       background-color: #7b77a0; }
-    /* line 27, ../sass/_feature-services.scss */
+    /* line 26, ../sass/_feature-services.scss */
     .feature-service a:before {
       content: "";
       width: 60px;
@@ -442,27 +445,27 @@ section, footer {
       display: block;
       margin: 0 auto 1em; }
 
-/* line 40, ../sass/_feature-services.scss */
+/* line 39, ../sass/_feature-services.scss */
 .feature-services--coucil-tax:before {
   background-image: url("/css/svg-source/council_tax.svg"); }
 
-/* line 44, ../sass/_feature-services.scss */
+/* line 43, ../sass/_feature-services.scss */
 .feature-services--citizenship:before {
   background-image: url("/css/svg-source/citizenship_matters.svg"); }
 
-/* line 48, ../sass/_feature-services.scss */
+/* line 47, ../sass/_feature-services.scss */
 .feature-services--waste-disposal:before {
   background-image: url("/css/svg-source/waste_disposal.svg"); }
 
-/* line 52, ../sass/_feature-services.scss */
+/* line 51, ../sass/_feature-services.scss */
 .feature-services--licensing:before {
   background-image: url("/css/svg-source/licensing.svg"); }
 
-/* line 56, ../sass/_feature-services.scss */
+/* line 55, ../sass/_feature-services.scss */
 .feature-services--parking:before {
   background-image: url("/css/svg-source/parking.svg"); }
 
-/* line 60, ../sass/_feature-services.scss */
+/* line 59, ../sass/_feature-services.scss */
 .feature-services--planning:before {
   background-image: url("/css/svg-source/planning.svg"); }
 
@@ -509,7 +512,7 @@ section, footer {
     background-size: 100%;
     float: left;
     margin-left: -30px;
-    margin-right: 5px; }
+    margin-right: 25px; }
 /* line 29, ../sass/_important-information.scss */
 .important-information a {
   text-transform: uppercase;
@@ -578,13 +581,15 @@ section, footer {
 /* line 1, ../sass/_events.scss */
 .next-events {
   background-color: #419ab7;
-  color: white; }
+  color: white;
+  border-top: 1px solid #383567; }
   @media (min-width: 50em) {
     /* line 1, ../sass/_events.scss */
     .next-events {
+      border-top: none;
       float: left;
       width: 42%; } }
-  /* line 8, ../sass/_events.scss */
+  /* line 10, ../sass/_events.scss */
   .next-events h2 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 600;
@@ -608,27 +613,27 @@ section, footer {
         color: #1d1b34;
         text-decoration: none;
         border-bottom: 1px dotted #7b77a0; }
-  /* line 16, ../sass/_events.scss */
+  /* line 18, ../sass/_events.scss */
   .next-events ol {
-    margin-bottom: 2em; }
-  /* line 19, ../sass/_events.scss */
+    margin-bottom: 2em;
+    font-size: 1.1em; }
+  /* line 23, ../sass/_events.scss */
   .next-events a {
     color: white;
     display: block;
     padding: 1em 0; }
-  /* line 22, ../sass/_events.scss */
+  /* line 27, ../sass/_events.scss */
   .next-events date {
     display: block;
     float: left;
     width: 50px;
-    font-size: 1.1em;
     clear: left;
     text-transform: uppercase; }
-    /* line 29, ../sass/_events.scss */
+    /* line 33, ../sass/_events.scss */
     .next-events date span {
       display: block; }
 
-/* line 35, ../sass/_events.scss */
+/* line 39, ../sass/_events.scss */
 .next-events--event {
   text-transform: uppercase; }
 
@@ -717,7 +722,8 @@ section, footer {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  font-weight: 300; }
   /* line 36, ../sass/_typography.scss */
   .footer a {
     color: #383567;
@@ -727,15 +733,18 @@ section, footer {
       color: #1d1b34;
       text-decoration: none;
       border-bottom: 1px dotted #7b77a0; }
-  /* line 35, ../sass/_footer.scss */
+  /* line 36, ../sass/_footer.scss */
   .footer a {
     color: white; }
+    /* line 37, ../sass/_footer.scss */
+    .footer a:hover {
+      color: white; }
   @media (min-width: 50em) {
     /* line 33, ../sass/_footer.scss */
     .footer {
       clear: left;
       background-color: #22203d; }
-      /* line 39, ../sass/_footer.scss */
+      /* line 44, ../sass/_footer.scss */
       .footer li {
         display: inline-block;
         margin-right: 1em; } }

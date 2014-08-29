@@ -1,7 +1,9 @@
 .next-events {
 	background-color: $secondary-color;
 	color: $white;
+	border-top: 1px solid $primary-color;
 	@include breakpoint(tablet){
+		border-top: none;
 		float:left;
 		width: 42%;
 	}
@@ -15,15 +17,17 @@
 	}
 	ol {
 		margin-bottom: 2em;
+		font-size: 1.1em;
+
 	}
 	a {color: $white;
 		display: block;
-		padding: 1em 0;}
+		padding: 1em 0;
+	}
 	date {
 		display: block;
 		float:left;
 		width: 50px;
-		font-size: 1.1em;
 		clear:left;
 		text-transform: uppercase;
 		span {

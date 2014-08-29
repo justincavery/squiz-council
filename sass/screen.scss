@@ -33,7 +33,7 @@ li {
 }
 
 .wrapper {
-	max-width: 64em; margin: 0 auto;
+	 margin: 0 auto;
 }
 .header {
 	@include breakpoint(tablet){
@@ -75,11 +75,16 @@ li {
 			@include breakpoint(tablet){
 				@include heading-6;
 				color: #fff;
+				border-bottom:none;
 			}
 		&:hover, &:active, &:focus{
 			background-color:$primary-color;
 		}
 		}
+}
+
+.targeted-content, .feature-services { 
+	padding: 0 10%;
 }
 
 .targeted-content {
