@@ -391,9 +391,16 @@ section, footer {
     section, footer {
       padding: 2em; } }
 
-/* line 106, ../sass/screen.scss */
-.home-boxed-layout section:nth-child(2n+1) {
-  clear: left; }
+@media (min-width: 50em) {
+  /* line 107, ../sass/screen.scss */
+  .home-boxed-layout section:nth-child(2n+1) {
+    clear: left; }
+  /* line 110, ../sass/screen.scss */
+  .home-boxed-layout section:nth-child(odd) {
+    padding-left: 10%; }
+  /* line 111, ../sass/screen.scss */
+  .home-boxed-layout section:nth-child(even) {
+    padding-right: 10%; } }
 
 /* line 3, ../sass/_search.scss */
 .search {
@@ -410,8 +417,15 @@ section, footer {
 /* line 2, ../sass/_feature-services.scss */
 .feature-services {
   padding: 0; }
+  @media (min-width: 50em) {
+    /* line 2, ../sass/_feature-services.scss */
+    .feature-services {
+      float: left;
+      width: 100%;
+      background-color: #383567;
+      padding: 0 10%; } }
 
-/* line 5, ../sass/_feature-services.scss */
+/* line 11, ../sass/_feature-services.scss */
 .feature-service {
   width: 50%;
   float: left;
@@ -419,53 +433,67 @@ section, footer {
   display: table;
   min-height: 10em; }
   @media (min-width: 50em) {
-    /* line 5, ../sass/_feature-services.scss */
+    /* line 11, ../sass/_feature-services.scss */
     .feature-service {
       width: 33.33%;
       min-height: 13em; } }
-  /* line 15, ../sass/_feature-services.scss */
+  /* line 21, ../sass/_feature-services.scss */
   .feature-service a {
     display: table-cell;
     color: white;
     min-height: 10em;
     background-color: #383567;
     text-align: center;
-    vertical-align: middle; }
-    /* line 25, ../sass/_feature-services.scss */
+    vertical-align: middle;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    /* line 32, ../sass/_feature-services.scss */
     .feature-service a:hover, .feature-service a:active, .feature-service a:focus {
       background-color: #7b77a0; }
-    /* line 26, ../sass/_feature-services.scss */
+    /* line 33, ../sass/_feature-services.scss */
     .feature-service a:before {
       content: "";
       width: 60px;
       height: 60px;
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: fill;
+      background-size: contain;
       display: block;
-      margin: 0 auto 1em; }
+      margin: 0 auto 1em;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    /* line 44, ../sass/_feature-services.scss */
+    .feature-service a:hover:before {
+      width: 70px;
+      height: 70px; }
 
-/* line 39, ../sass/_feature-services.scss */
+/* line 51, ../sass/_feature-services.scss */
 .feature-services--coucil-tax:before {
   background-image: url("/css/svg-source/council_tax.svg"); }
 
-/* line 43, ../sass/_feature-services.scss */
+/* line 55, ../sass/_feature-services.scss */
 .feature-services--citizenship:before {
   background-image: url("/css/svg-source/citizenship_matters.svg"); }
 
-/* line 47, ../sass/_feature-services.scss */
+/* line 59, ../sass/_feature-services.scss */
 .feature-services--waste-disposal:before {
   background-image: url("/css/svg-source/waste_disposal.svg"); }
 
-/* line 51, ../sass/_feature-services.scss */
+/* line 63, ../sass/_feature-services.scss */
 .feature-services--licensing:before {
   background-image: url("/css/svg-source/licensing.svg"); }
 
-/* line 55, ../sass/_feature-services.scss */
+/* line 67, ../sass/_feature-services.scss */
 .feature-services--parking:before {
   background-image: url("/css/svg-source/parking.svg"); }
 
-/* line 59, ../sass/_feature-services.scss */
+/* line 71, ../sass/_feature-services.scss */
 .feature-services--planning:before {
   background-image: url("/css/svg-source/planning.svg"); }
 
@@ -682,7 +710,14 @@ section, footer {
       width: 100%;
       background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/images/background.jpg) center bottom no-repeat;
       background-size: cover; } }
-  /* line 14, ../sass/_footer.scss */
+  @media (min-width: 50em) {
+    /* line 15, ../sass/_footer.scss */
+    .footer-section div:nth-child(odd) {
+      padding-left: calc(10% - 2em); }
+    /* line 18, ../sass/_footer.scss */
+    .footer-section div:nth-child(even) {
+      padding-right: calc(10% - 2em); } }
+  /* line 22, ../sass/_footer.scss */
   .footer-section h2 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 600;
@@ -703,17 +738,17 @@ section, footer {
         text-decoration: none;
         border-bottom: 1px dotted #7b77a0; }
 
-/* line 21, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 .contact-footer li {
   width: 50%;
   float: left; }
 
-/* line 27, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .contact-footer--phone-number, .contact-footer--fax-number {
   float: right;
   margin-bottom: 0; }
 
-/* line 33, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 .footer {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
@@ -733,18 +768,18 @@ section, footer {
       color: #1d1b34;
       text-decoration: none;
       border-bottom: 1px dotted #7b77a0; }
-  /* line 36, ../sass/_footer.scss */
+  /* line 44, ../sass/_footer.scss */
   .footer a {
     color: white; }
-    /* line 37, ../sass/_footer.scss */
+    /* line 45, ../sass/_footer.scss */
     .footer a:hover {
       color: white; }
   @media (min-width: 50em) {
-    /* line 33, ../sass/_footer.scss */
+    /* line 41, ../sass/_footer.scss */
     .footer {
       clear: left;
       background-color: #22203d; }
-      /* line 44, ../sass/_footer.scss */
+      /* line 52, ../sass/_footer.scss */
       .footer li {
         display: inline-block;
         margin-right: 1em; } }

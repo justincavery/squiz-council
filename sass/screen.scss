@@ -103,8 +103,12 @@ section, footer {
 }
 
 .home-boxed-layout {
+	@include breakpoint(tablet){
 	section:nth-child(2n+1) {
 		clear:left;
+	}
+	section:nth-child(odd){padding-left: 10%}
+	section:nth-child(even){padding-right: 10%}
 	}
 }
 

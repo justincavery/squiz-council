@@ -1,6 +1,12 @@
 
 .feature-services {
 	padding: 0;
+	@include breakpoint(tablet){
+		float:left;
+		width: 100%;
+		background-color: #383567;
+		padding: 0 10%;
+	}
 }
 .feature-service {
 	width: 50%;
@@ -17,11 +23,12 @@
 	//display: flex;
   	//align-items: center;
   	//justify-content: center;
-  	color: lighten($white, 0.8);
+  	color: lighten($white, 0.6);
 	min-height: 10em;
 	background-color:$primary-color;	
 	text-align: center;
 	vertical-align: middle;//
+	@include transition;
 	&:hover, &:active, &:focus  {background-color:$primary-color-light;}
 	&:before {
 			content: "";
@@ -29,10 +36,15 @@
 			height: 60px;
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-size: fill;
+			background-size: contain;
 			display: block;
 			margin: 0 auto 1em;
+			@include transition;
 		}
+	&:hover:before {
+		width: 70px;
+		height: 70px;
+	}
 	}
 }
 

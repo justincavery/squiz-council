@@ -1,5 +1,7 @@
 .footer-section {
-	@include breakpoint(tablet){
+	color: #fff;
+	background-color: $primary-color-dark;
+		@include breakpoint(tablet){
 		float:left;
 		width: 100%;
 		background: linear-gradient(
@@ -9,8 +11,14 @@
         url(/images/background.jpg) center bottom no-repeat;
 		background-size: cover;
 	}
-	color: #fff;
-	background-color: $primary-color-dark;
+	@include breakpoint(tablet){
+		& div:nth-child(odd){
+			padding-left:calc(10% - 2em);
+		}
+		& div:nth-child(even){
+			padding-right: calc(10% - 2em);
+		}
+	}
 	h2 {
 		@include heading-4;
 		color: #fff;
