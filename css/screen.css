@@ -836,25 +836,26 @@ section, footer {
 .aside h2 {
   text-transform: uppercase; }
 
-/* line 27, ../sass/_article.scss */
-.inner .content {
-  float: left;
-  width: 100%;
-  display: flex; }
+@media (min-width: 50em) {
+  /* line 27, ../sass/_article.scss */
+  .inner .content {
+    float: left;
+    width: 100%;
+    display: flex; } }
 
-/* line 35, ../sass/_article.scss */
+/* line 37, ../sass/_article.scss */
 .breadcrumbs li {
   float: left;
   margin-right: 0.25em; }
-  /* line 38, ../sass/_article.scss */
+  /* line 40, ../sass/_article.scss */
   .breadcrumbs li a {
     text-transform: uppercase; }
-  /* line 41, ../sass/_article.scss */
+  /* line 43, ../sass/_article.scss */
   .breadcrumbs li:after {
     content: " / "; }
-  /* line 44, ../sass/_article.scss */
+  /* line 46, ../sass/_article.scss */
   .breadcrumbs li:last-of-type:after {
     content: ""; }
-/* line 48, ../sass/_article.scss */
+/* line 50, ../sass/_article.scss */
 .breadcrumbs + h1 {
   clear: left; }

@@ -2,7 +2,7 @@
 	<head>
 		<title>Squiz County Council</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" >
-
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <style>
 html {
   font-family: "Open Sans", sans-serif; }
@@ -21,7 +21,7 @@ a {
 </style>
 <script>
   function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
-  loadCSS( "css/screen.css" );
+  loadCSS( "css/screen-min.css" );
 </script>
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" media="screen">
@@ -90,12 +90,24 @@ a {
 <p><strong>Justin Avery:</strong> Hey everyone and welcome to another Responsive Design weekly podcast. This is episode 17. My name is Justin Avery, I'm your host and the curator of Responsive Design weekly newsletter. This week our sponsor
 is by a fantastic book, it's called Responsive Design Workflow. This piece of literary genius takes us back to the bare bones of a basic site like the actual content and it teaches us about how to build up a site from the content out. A mobile first approach to responsive design, talking about starting
 with gray boxes and building things out to a more a complex design. It's a really great book. You can go and check it out at responsivedesignworkflow.com. All of the code is on GitHub as well and you can actually purchase it through Peach Pit Press. There's a link on the website. You can either buy the
-hard copy book or the e-book bundle.</p><p>I've read it twice and gone through and implemented things. I pick something up new each
-time I read it. So I highly recommend going out and purchasing that book. It's very good, responsivedesignworkflow.com. This week is also a special week because we have a special guest on, who is the author of Responsive Design Workflow, Mr. Steven Hay. How are you Steven?</p><p><strong>Stephen Hay:</strong> I'm fine, thanks for having me. That was a great introduction and sounded really professional.</p><p><strong>Justin Avery:</strong> You can put that on your website, you can use that as a sound clip. You can use that for anything.</p><p><strong>Stephen Hay:</strong> Sounds good. Justin Avery Clip Sounds, right?</p><p><strong>Justin Avery:</strong> .com. That's exactly it. So welcome along. If there's people out there who haven't been to a conference in the last 3 or 4 years or haven't been reading the web or following twitter, or looking at things [00:02:00]
-responsive and they may not have come across your name. Do you want to tell us a little bit about yourself? How you got into the industry, what you've been doing, and what you're doing these days?</p><p><strong>Stephen Hay:</strong> Sure. I was born-</p><p><strong>Justin Avery:</strong> A long time ago.</p><p><strong>Stephen Hay:</strong> Actually, I studied as a designer, so a graphic designer. I used to work in print. I worked my way up from just doing layout stuff to eventually doing [inaudible 00:02:39] and I did mostly corporate identity and packaging,
-like consumer packaging. Then I started doing websites in 1995, tried to learn it. I thought it was interesting just to make my own stuff. My own portfolio was like the first thing I ever made with server side image maps believe it or not.</p><p><strong>Justin Avery:</strong> Is it still online?</p><p><strong>Stephen Hay:</strong> Oh, no. I can't even find it actually which is unfortunate. I don't even know if I could get it working because the technology is different. I'm sure someone could help me out with that. I have to find it first. I kind of
+hard copy book or the e-book bundle.</p>
+
+<table id="table25166" style="width: 100%;"><thead><tr><th id="table25166r1c1">&nbsp;</th><th id="table25166r1c2">Last Week</th><th id="table25166r1c3">This week</th></tr></thead><tbody><tr><th id="table25166r2c1">Meetings booked</th><td headers="table25166r1c2 table25166r2c1">&nbsp;</td><td headers="table25166r1c3 table25166r2c1">&nbsp;</td></tr><tr><th id="table25166r3c1">Meetings attended</th><td headers="table25166r1c2 table25166r3c1">&nbsp;</td><td headers="table25166r1c3 table25166r3c1">&nbsp;</td></tr><tr><th id="table25166r4c1">Leads</th><td headers="table25166r1c2 table25166r4c1">&nbsp;</td><td headers="table25166r1c3 table25166r4c1">&nbsp;</td></tr><tr><th id="table25166r5c1">LinkedIn</th><td headers="table25166r1c2 table25166r5c1">&nbsp;</td><td headers="table25166r1c3 table25166r5c1">&nbsp;</td></tr><tr><th id="table25166r6c1">Emails</th><td headers="table25166r1c2 table25166r6c1">&nbsp;</td><td headers="table25166r1c3 table25166r6c1">&nbsp;</td></tr><tr><th id="table25166r7c1">Calls</th><td headers="table25166r1c2 table25166r7c1">&nbsp;</td><td headers="table25166r1c3 table25166r7c1">&nbsp;</td></tr><tr><th id="table25166r8c1">Opportunities coverted</th><td headers="table25166r1c2 table25166r8c1">&nbsp;</td><td headers="table25166r1c3 table25166r8c1">&nbsp;</td></tr></tbody></table>
+
+<p>I've read it twice and gone through and implemented things. I pick something up new each
+time I read it. So I highly recommend going out and purchasing that book. It's very good, responsivedesignworkflow.com. This week is also a special week because we have a special guest on, who is the author of Responsive Design Workflow, Mr. Steven Hay. How are you Steven?</p><p><strong>Stephen Hay:</strong> I'm fine, thanks for having me. That was a great introduction and sounded really professional.</p><p><strong>Justin Avery:</strong> You can put that on your website, you can use that as a sound clip. You can use that for anything.</p><p><strong>Stephen Hay:</strong> Sounds good. Justin Avery Clip Sounds, right?</p>
+<h3>Oh my, what a title</h3>
+<p><strong>Justin Avery:</strong> .com. That's exactly it. So welcome along. If there's people out there who haven't been to a conference in the last 3 or 4 years or haven't been reading the web or following twitter, or looking at things [00:02:00]
+responsive and they may not have come across your name. Do you want to tell us a little bit about yourself? How you got into the industry, what you've been doing, and what you're doing these days?</p>
+<h4>And another thing, I've been wondering</h4>
+<p><strong>Stephen Hay:</strong> Sure. I was born-</p><p><strong>Justin Avery:</strong> A long time ago.</p><p><strong>Stephen Hay:</strong> Actually, I studied as a designer, so a graphic designer. I used to work in print. I worked my way up from just doing layout stuff to eventually doing [inaudible 00:02:39] and I did mostly corporate identity and packaging,
+like consumer packaging. Then I started doing websites in 1995, tried to learn it. I thought it was interesting just to make my own stuff. My own portfolio was like the first thing I ever made with server side image maps believe it or not.</p>
+<h5>What is going on?</h5>
+<p><strong>Justin Avery:</strong> Is it still online?</p><p><strong>Stephen Hay:</strong> Oh, no. I can't even find it actually which is unfortunate. I don't even know if I could get it working because the technology is different. I'm sure someone could help me out with that. I have to find it first. I kind of
 know what it looked like. Sorry I can't show you that. I started in 95 and started playing around at the agency. We started doing a couple of websites and it was very expensive to make those things back then. I started playing around with CSS as soon as you could. Eventually I did more and more web stuff
-[00:04:00] and I liked it so much that I decided to just leave the print design thing and just do web stuff.</p><p>So I joined a company with a couple of other people and about 2 years later, that was in
+[00:04:00] and I liked it so much that I decided to just leave the print design thing and just do web stuff.</p>
+<h6>Boom goes the cannon</h6>
+<p>So I joined a company with a couple of other people and about 2 years later, that was in
 2002, we started a company called Cinnamon. I guess the whole idea is we thought that [inaudible 00:04:28] and accessibility were two things that go hand in hand. We did [inaudible 00:04:36] compliant websites and we discovered that it wasn't too much extra effort to make them completely accessible as
 well. And that it's possible to make accessible websites that look good. Back then, accessible websites were almost just plain text.</p><p>We got a little bit of notoriety with that and that's how I first started reading about
 Zeldman. I think he posted something about some stuff that we did. I had read Zeldman's blog from 98, 99 I think and it was totally in to the whole standards thing. I thought that seems like the logical approach. Starting simple and from the basics and working your way up. You can even see that in the

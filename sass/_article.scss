@@ -25,9 +25,11 @@
 
 .inner {
 	.content {
+		@include breakpoint(tablet){
 		float:left;
 		width: 100%;
 		display:flex;
+		}
 	}
 }
 

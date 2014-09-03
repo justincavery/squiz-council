@@ -52,13 +52,15 @@ module.exports = function(grunt) {
             },
         },
         cssmin: {
-            files: [{
-                expand: true,
-                cwd: '.tmp/',
-                src: '*.css',
-                dest: 'css/',
-                ext: '.min.css'
-            }]
+            my_target: {
+                files: [{
+                    expand: true,
+                    cwd: 'css/',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css/',
+                    ext: '.min.css'
+                }]
+            }
         },
         svgmin: {
             dist: {
@@ -118,7 +120,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['sass/*.scss'],
-                tasks: ['compass', 'criticalcss'],
+                tasks: ['compass', 'criticalcss', 'cssmin'],
                 options: {
                     livereload: true,
                 }
