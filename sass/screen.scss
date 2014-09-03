@@ -50,8 +50,7 @@ li {
 .navigation-main {
 	background-color: $primary-color-light;
 	@include breakpoint(tablet){
-		max-width: 58em;
-		margin: 0 auto;
+		margin: 0 10%;
 		position: relative;
 		top:-2em;
 	}
@@ -121,4 +120,4 @@ section, footer {
 @import "subscribe";
 @import "footer";
 @import "social";
-
+@import "article";

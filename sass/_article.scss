@@ -1,0 +1,48 @@
+.article, .aside {
+	padding: 1em 1em 0;
+
+}
+
+.article {
+
+	@include breakpoint(tablet){
+		float:left;
+		width: 58%;
+		padding-left: 10%;
+	}
+}
+
+.aside {
+	@include breakpoint(tablet){
+		float:left;
+		width: 42%;
+		padding-right: 10%;
+	}
+}
+
+.inner {
+	.content {
+		float:left;
+		width: 100%;
+		display:flex;
+	}
+}
+
+.breadcrumbs { 
+	li {
+	float:left;
+	margin-right: 0.25em;
+	a {
+		text-transform: uppercase;
+	}
+	&:after {
+		content: " / ";
+	}
+	&:last-of-type:after {
+		content: "";
+	}
+	}
+	& + h1 {
+		clear: left;
+	}
+}

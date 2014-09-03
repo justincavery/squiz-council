@@ -3,7 +3,7 @@ html { font-family: $font-stack;}
 @mixin title-face {
   font-family: $font-stack;
   font-weight: 600;
-  text-transform: uppercase;
+ // text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 
@@ -91,6 +91,13 @@ h5 {
 h6 {
   @include heading-6;
 }
+
+
+p, ul, ol, blockquote, iframe, dl {
+  margin-bottom: 1.5em;
+}
+
+
 /*
 @mixin link {
   color: $link-color;

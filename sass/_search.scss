@@ -14,3 +14,21 @@
 		}
 	}
 }
+
+.search--input {
+	background-repeat: no-repeat;
+//	background-image: url('/svg/magnifying-glass-sm.svg');
+//	background-position: 95%;
+//	background-size: 30px;
+
+	@include breakpoint(tablet){
+		background-image:url('/svg/magnifying-glass-lg.svg');
+		background-position: 90%;
+		background-size: 2em;
+	}
+}
+
+.inner .search, .inner .search--input {
+	background: $primary-color;
+	color: $white;
+}

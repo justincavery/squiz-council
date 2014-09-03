@@ -29,7 +29,7 @@ button, .button {
 		background-color: $primary-color-light;
 	}
 	@include breakpoint(tablet){
-		width:inherit;
+		width:50%;
 		padding: 1em 1em;
 	}
 }

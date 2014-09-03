@@ -66,7 +66,6 @@ html {
 h1 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -86,7 +85,6 @@ h1 {
 h2 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -106,7 +104,6 @@ h2 {
 h3 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -126,7 +123,6 @@ h3 {
 h4 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -146,7 +142,6 @@ h4 {
 h5 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -166,7 +161,6 @@ h5 {
 h6 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -181,6 +175,10 @@ h6 {
       color: #1d1b34;
       text-decoration: none;
       border-bottom: 1px dotted #7b77a0; }
+
+/* line 96, ../sass/_typography.scss */
+p, ul, ol, blockquote, iframe, dl {
+  margin-bottom: 1.5em; }
 
 /*
 @mixin link {
@@ -245,7 +243,6 @@ input {
 button, .button {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -276,7 +273,7 @@ button, .button {
   @media (min-width: 50em) {
     /* line 16, ../sass/_forms.scss */
     button, .button {
-      width: inherit;
+      width: 50%;
       padding: 1em 1em; } }
 
 /* line 12, ../sass/screen.scss */
@@ -324,19 +321,18 @@ li {
   @media (min-width: 50em) {
     /* line 50, ../sass/screen.scss */
     .navigation-main {
-      max-width: 58em;
-      margin: 0 auto;
+      margin: 0 10%;
       position: relative;
       top: -2em; } }
-  /* line 59, ../sass/screen.scss */
+  /* line 58, ../sass/screen.scss */
   .navigation-main li {
     margin-bottom: 0; }
     @media (min-width: 50em) {
-      /* line 59, ../sass/screen.scss */
+      /* line 58, ../sass/screen.scss */
       .navigation-main li {
         float: left;
         width: 16.6666667%; } }
-  /* line 66, ../sass/screen.scss */
+  /* line 65, ../sass/screen.scss */
   .navigation-main a {
     color: white;
     background-color: #7b77a0;
@@ -347,11 +343,10 @@ li {
     border-bottom: 1px solid;
     text-transform: uppercase; }
     @media (min-width: 50em) {
-      /* line 66, ../sass/screen.scss */
+      /* line 65, ../sass/screen.scss */
       .navigation-main a {
         font-family: "Open Sans", helvetica, arial, sans-serif;
         font-weight: 600;
-        text-transform: uppercase;
         text-rendering: optimizeLegibility;
         margin-bottom: 0.35em;
         line-height: 1.2;
@@ -368,37 +363,37 @@ li {
             color: #1d1b34;
             text-decoration: none;
             border-bottom: 1px dotted #7b77a0; } }
-    /* line 80, ../sass/screen.scss */
+    /* line 79, ../sass/screen.scss */
     .navigation-main a:hover, .navigation-main a:active, .navigation-main a:focus {
       background-color: #383567; }
 
-/* line 86, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .targeted-content, .feature-services {
   padding: 0 10%; }
 
 @media (min-width: 50em) {
-  /* line 90, ../sass/screen.scss */
+  /* line 89, ../sass/screen.scss */
   .targeted-content {
     min-height: 245px;
     background: url("/images/background.jpg") no-repeat center center;
     background-size: cover; } }
 
-/* line 98, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 section, footer {
   padding: 1em 1em; }
   @media (min-width: 50em) {
-    /* line 98, ../sass/screen.scss */
+    /* line 97, ../sass/screen.scss */
     section, footer {
       padding: 2em; } }
 
 @media (min-width: 50em) {
-  /* line 107, ../sass/screen.scss */
+  /* line 106, ../sass/screen.scss */
   .home-boxed-layout section:nth-child(2n+1) {
     clear: left; }
-  /* line 110, ../sass/screen.scss */
+  /* line 109, ../sass/screen.scss */
   .home-boxed-layout section:nth-child(odd) {
     padding-left: 10%; }
-  /* line 111, ../sass/screen.scss */
+  /* line 110, ../sass/screen.scss */
   .home-boxed-layout section:nth-child(even) {
     padding-right: 10%; } }
 
@@ -413,6 +408,21 @@ section, footer {
     /* line 11, ../sass/_search.scss */
     .search button {
       display: none; } }
+
+/* line 18, ../sass/_search.scss */
+.search--input {
+  background-repeat: no-repeat; }
+  @media (min-width: 50em) {
+    /* line 18, ../sass/_search.scss */
+    .search--input {
+      background-image: url("/svg/magnifying-glass-lg.svg");
+      background-position: 90%;
+      background-size: 2em; } }
+
+/* line 31, ../sass/_search.scss */
+.inner .search, .inner .search--input {
+  background: #383567;
+  color: white; }
 
 /* line 2, ../sass/_feature-services.scss */
 .feature-services {
@@ -440,7 +450,7 @@ section, footer {
   /* line 21, ../sass/_feature-services.scss */
   .feature-service a {
     display: table-cell;
-    color: white;
+    color: #d9d9d9;
     min-height: 10em;
     background-color: #383567;
     text-align: center;
@@ -452,8 +462,9 @@ section, footer {
     transition: all 0.2s ease-in-out; }
     /* line 32, ../sass/_feature-services.scss */
     .feature-service a:hover, .feature-service a:active, .feature-service a:focus {
-      background-color: #7b77a0; }
-    /* line 33, ../sass/_feature-services.scss */
+      background-color: #7b77a0;
+      color: white; }
+    /* line 36, ../sass/_feature-services.scss */
     .feature-service a:before {
       content: "";
       width: 60px;
@@ -468,32 +479,32 @@ section, footer {
       -ms-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-    /* line 44, ../sass/_feature-services.scss */
+    /* line 47, ../sass/_feature-services.scss */
     .feature-service a:hover:before {
       width: 70px;
       height: 70px; }
 
-/* line 51, ../sass/_feature-services.scss */
+/* line 54, ../sass/_feature-services.scss */
 .feature-services--coucil-tax:before {
   background-image: url("/css/svg-source/council_tax.svg"); }
 
-/* line 55, ../sass/_feature-services.scss */
+/* line 58, ../sass/_feature-services.scss */
 .feature-services--citizenship:before {
   background-image: url("/css/svg-source/citizenship_matters.svg"); }
 
-/* line 59, ../sass/_feature-services.scss */
+/* line 62, ../sass/_feature-services.scss */
 .feature-services--waste-disposal:before {
   background-image: url("/css/svg-source/waste_disposal.svg"); }
 
-/* line 63, ../sass/_feature-services.scss */
+/* line 66, ../sass/_feature-services.scss */
 .feature-services--licensing:before {
   background-image: url("/css/svg-source/licensing.svg"); }
 
-/* line 67, ../sass/_feature-services.scss */
+/* line 70, ../sass/_feature-services.scss */
 .feature-services--parking:before {
   background-image: url("/css/svg-source/parking.svg"); }
 
-/* line 71, ../sass/_feature-services.scss */
+/* line 74, ../sass/_feature-services.scss */
 .feature-services--planning:before {
   background-image: url("/css/svg-source/planning.svg"); }
 
@@ -506,7 +517,6 @@ section, footer {
 .important-information h2 {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -537,7 +547,7 @@ section, footer {
     height: 25px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: contain;
     float: left;
     margin-left: -30px;
     margin-right: 25px; }
@@ -576,7 +586,6 @@ section, footer {
   .latest-news h2 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
     text-rendering: optimizeLegibility;
     margin-bottom: 0.35em;
     line-height: 1.2;
@@ -621,7 +630,6 @@ section, footer {
   .next-events h2 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
     text-rendering: optimizeLegibility;
     margin-bottom: 0.35em;
     line-height: 1.2;
@@ -721,7 +729,6 @@ section, footer {
   .footer-section h2 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
     text-rendering: optimizeLegibility;
     margin-bottom: 0.35em;
     line-height: 1.2;
@@ -752,7 +759,6 @@ section, footer {
 .footer {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   margin-bottom: 0.35em;
   line-height: 1.2;
@@ -823,3 +829,44 @@ section, footer {
 /* line 40, ../sass/_social.scss */
 .googleplus:before {
   background-image: url("/css/svg-source/googleplus.svg"); }
+
+/* line 1, ../sass/_article.scss */
+.article, .aside {
+  padding: 1em 1em 0; }
+
+@media (min-width: 50em) {
+  /* line 6, ../sass/_article.scss */
+  .article {
+    float: left;
+    width: 58%;
+    padding-left: 10%; } }
+
+@media (min-width: 50em) {
+  /* line 15, ../sass/_article.scss */
+  .aside {
+    float: left;
+    width: 42%;
+    padding-right: 10%; } }
+
+/* line 24, ../sass/_article.scss */
+.inner .content {
+  float: left;
+  width: 100%;
+  display: flex; }
+
+/* line 32, ../sass/_article.scss */
+.breadcrumbs li {
+  float: left;
+  margin-right: 0.25em; }
+  /* line 35, ../sass/_article.scss */
+  .breadcrumbs li a {
+    text-transform: uppercase; }
+  /* line 38, ../sass/_article.scss */
+  .breadcrumbs li:after {
+    content: " / "; }
+  /* line 41, ../sass/_article.scss */
+  .breadcrumbs li:last-of-type:after {
+    content: ""; }
+/* line 45, ../sass/_article.scss */
+.breadcrumbs + h1 {
+  clear: left; }
