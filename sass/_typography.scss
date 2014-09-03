@@ -40,32 +40,32 @@ html { font-family: $font-stack;}
 
 @mixin heading-1 {
   @include heading;
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 
 @mixin heading-2 {
   @include heading;
-  font-size: 1.875em;
+  font-size: 2em;
 }
 
 @mixin heading-3 {
   @include heading;
-  font-size: 1.4em;
+  font-size: 1.444em;
 }
 
 @mixin heading-4 {
   @include heading;
-  font-size: 1.2em;
+  font-size: 1.222em;
 }
 
 @mixin heading-5 {
   @include heading;
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
 @mixin heading-6 {
   @include heading;
-  font-size: 0.875em;
+  font-size: 1em;
 }
 
 h1 {

@@ -72,7 +72,7 @@ li {
 			border-bottom: 1px solid;
 			text-transform: uppercase;
 			@include breakpoint(tablet){
-				@include heading-6;
+				font-size: 0.875em;
 				color: #fff;
 				border-bottom:none;
 			}

@@ -70,7 +70,7 @@ h1 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 2.5em; }
+  font-size: 3.5em; }
   /* line 36, ../sass/_typography.scss */
   h1 a {
     color: #383567;
@@ -89,7 +89,7 @@ h2 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 1.875em; }
+  font-size: 2em; }
   /* line 36, ../sass/_typography.scss */
   h2 a {
     color: #383567;
@@ -108,7 +108,7 @@ h3 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 1.4em; }
+  font-size: 1.444em; }
   /* line 36, ../sass/_typography.scss */
   h3 a {
     color: #383567;
@@ -127,7 +127,7 @@ h4 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 1.2em; }
+  font-size: 1.222em; }
   /* line 36, ../sass/_typography.scss */
   h4 a {
     color: #383567;
@@ -146,7 +146,7 @@ h5 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 1em; }
+  font-size: 1.15em; }
   /* line 36, ../sass/_typography.scss */
   h5 a {
     color: #383567;
@@ -165,7 +165,7 @@ h6 {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 0.875em; }
+  font-size: 1em; }
   /* line 36, ../sass/_typography.scss */
   h6 a {
     color: #383567;
@@ -247,7 +247,7 @@ button, .button {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 0.875em;
+  font-size: 1em;
   display: block;
   line-height: 1.6;
   padding: 1em 0.5em;
@@ -345,24 +345,9 @@ li {
     @media (min-width: 50em) {
       /* line 65, ../sass/screen.scss */
       .navigation-main a {
-        font-family: "Open Sans", helvetica, arial, sans-serif;
-        font-weight: 600;
-        text-rendering: optimizeLegibility;
-        margin-bottom: 0.35em;
-        line-height: 1.2;
-        color: #383567;
         font-size: 0.875em;
         color: #fff;
-        border-bottom: none; }
-        /* line 36, ../sass/_typography.scss */
-        .navigation-main a a {
-          color: #383567;
-          text-decoration: none; }
-          /* line 24, ../sass/_typography.scss */
-          .navigation-main a a:hover, .navigation-main a a:focus {
-            color: #1d1b34;
-            text-decoration: none;
-            border-bottom: 1px dotted #7b77a0; } }
+        border-bottom: none; } }
     /* line 79, ../sass/screen.scss */
     .navigation-main a:hover, .navigation-main a:active, .navigation-main a:focus {
       background-color: #383567; }
@@ -521,7 +506,7 @@ section, footer {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 1.4em;
+  font-size: 1.444em;
   text-transform: none;
   padding-bottom: 20px; }
   /* line 36, ../sass/_typography.scss */
@@ -590,7 +575,7 @@ section, footer {
     margin-bottom: 0.35em;
     line-height: 1.2;
     color: #383567;
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 100;
     letter-spacing: 0.05em;
     line-height: 1.6;
@@ -634,7 +619,7 @@ section, footer {
     margin-bottom: 0.35em;
     line-height: 1.2;
     color: #383567;
-    font-size: 0.875em;
+    font-size: 1em;
     color: white;
     font-weight: 100;
     letter-spacing: 0.05em;
@@ -733,7 +718,7 @@ section, footer {
     margin-bottom: 0.35em;
     line-height: 1.2;
     color: #383567;
-    font-size: 1.2em;
+    font-size: 1.222em;
     color: #fff; }
     /* line 36, ../sass/_typography.scss */
     .footer-section h2 a {
@@ -763,7 +748,7 @@ section, footer {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #383567;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 300; }
   /* line 36, ../sass/_typography.scss */
   .footer a {
@@ -847,26 +832,29 @@ section, footer {
     float: left;
     width: 42%;
     padding-right: 10%; } }
+/* line 21, ../sass/_article.scss */
+.aside h2 {
+  text-transform: uppercase; }
 
-/* line 24, ../sass/_article.scss */
+/* line 27, ../sass/_article.scss */
 .inner .content {
   float: left;
   width: 100%;
   display: flex; }
 
-/* line 32, ../sass/_article.scss */
+/* line 35, ../sass/_article.scss */
 .breadcrumbs li {
   float: left;
   margin-right: 0.25em; }
-  /* line 35, ../sass/_article.scss */
+  /* line 38, ../sass/_article.scss */
   .breadcrumbs li a {
     text-transform: uppercase; }
-  /* line 38, ../sass/_article.scss */
+  /* line 41, ../sass/_article.scss */
   .breadcrumbs li:after {
     content: " / "; }
-  /* line 41, ../sass/_article.scss */
+  /* line 44, ../sass/_article.scss */
   .breadcrumbs li:last-of-type:after {
     content: ""; }
-/* line 45, ../sass/_article.scss */
+/* line 48, ../sass/_article.scss */
 .breadcrumbs + h1 {
   clear: left; }
