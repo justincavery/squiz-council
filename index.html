@@ -3,31 +3,15 @@
 		<title>Squiz County Council</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" >
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-<style>
-html {
-  font-family: "Open Sans", sans-serif; }
-* {
-  box-size: border-box; }
-body {
-  font-size: 16px;
-  line-height: 1.2em; }
-a {
-  color: #383567;
-  text-decoration: none; }
-.logo {
-  width: 10em;
-  margin: 1em auto;
-  display: block; }
-</style>
-<script>
-  function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
-  loadCSS( "css/screen-min.css" );
-</script>
-		<link rel="stylesheet" type="text/css" href="css/print.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" media="screen">
+<!-- Only here for running Critical CSS.
+	link rel="stylesheet" type="text/css" href="css/screen.min.css" media="screen" -->
+	<style>
+		a,body,div,header,html,img,li,ul{margin:0;padding:0;border-width:0;border-style:initial;border-color:initial;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ul{list-style:none initial initial}a img{border-style:none;border-width:initial;border-color:initial}header{display:block}html{font-family:'Open Sans',helvetica,arial,sans-serif}ul{margin-bottom:1.5em}button{font-family:'Open Sans',helvetica,arial,sans-serif;text-rendering:optimizelegibility;margin-bottom:.35em;font-size:1em;display:block;line-height:1.6;padding:1em .5em;background-color:#383567;width:100%;border-style:none;border-width:initial;border-color:initial;color:#fff;text-transform:uppercase;text-align:center;font-weight:400}@media (min-width:50em){button{width:50%;padding:1em}}*{box-sizing:border-box}body{font-size:100%;line-height:1.5}a{color:#383567;text-decoration:none}li{margin-bottom:.75em}.wrapper{margin:0 auto}@media (min-width:50em){.header{min-height:120px}}.logo{width:10em;margin:1em auto;display:block}.navigation-main li{margin-bottom:0}@media (min-width:50em){.navigation-main li{float:left;width:16.6666667%}}.navigation-main a{color:#fff;background-color:#7b77a0;text-align:center;display:block;line-height:1.6em;padding:1em 0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:initial;text-transform:uppercase}@media (min-width:50em){.navigation-main a{font-size:.875em;color:#fff;border-bottom-style:none;border-bottom-width:initial;border-bottom-color:initial}}@media (min-width:50em){.search button{display:none}}@media (min-width:50em){button{width:50%;padding:1em}}@media (min-width:50em){.header{min-height:120px}}@media (min-width:50em){.navigation-main li{float:left;width:16.6666667%}}@media (min-width:50em){.navigation-main a{font-size:.875em;color:#fff;border-bottom-style:none;border-bottom-width:initial;border-bottom-color:initial}}@media (min-width:50em){.search button{display:none}}a,body,div,header,html,img,li,tbody,td,th,thead,tr,ul{margin:0;padding:0;border-width:0;border-style:initial;border-color:initial;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ul{list-style:none initial initial}td,th{text-align:left;font-weight:400;vertical-align:middle}a img{border-style:none;border-width:initial;border-color:initial}header{display:block}html{font-family:'Open Sans',helvetica,arial,sans-serif}ul{margin-bottom:1.5em}button{font-family:'Open Sans',helvetica,arial,sans-serif;text-rendering:optimizelegibility;margin-bottom:.35em;font-size:1em;display:block;line-height:1.6;padding:1em .5em;background-color:#383567;width:100%;border-style:none;border-width:initial;border-color:initial;color:#fff;text-transform:uppercase;text-align:center;font-weight:400}@media (min-width:50em){button{width:50%;padding:1em}}*{box-sizing:border-box}body{font-size:100%;line-height:1.5}a{color:#383567;text-decoration:none}li{margin-bottom:.75em}.wrapper{margin:0 auto}@media (min-width:50em){.header{min-height:120px}}.logo{width:10em;margin:1em auto;display:block}.navigation-main li{margin-bottom:0}@media (min-width:50em){.navigation-main li{float:left;width:16.6666667%}}.navigation-main a{color:#fff;background-color:#7b77a0;text-align:center;display:block;line-height:1.6em;padding:1em 0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:initial;text-transform:uppercase}@media (min-width:50em){.navigation-main a{font-size:.875em;color:#fff;border-bottom-style:none;border-bottom-width:initial;border-bottom-color:initial}}@media (min-width:50em){.search button{display:none}}
+	</style>
 		<!--[if lte IE 8]>
 		<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen">
 		<![endif]-->
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</head>
 	<body>
 	<div class="wrapper">
@@ -154,6 +138,14 @@ a {
 					</ul>
 				</footer>
 	</div>
+
+	<script>
+  function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+  loadCSS( "css/screen.min.css" );
+  loadCSS("css/print.css");
+  loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300");
+</script>
 	<script type="text/javascript" src="http://localhost:35729/livereload.js?snipver=1"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

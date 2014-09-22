@@ -10,7 +10,7 @@ function watchsize(watch) {
     }
 }
 
-console.log(watchsize(11));
+console.log(watchsize(08));
 
 
 function ntowatch(watch) {

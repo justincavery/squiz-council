@@ -34,21 +34,23 @@ module.exports = function(grunt) {
             }
         },
         criticalcss: {
-            options: {
-                url: 'http://council.squiz',
-                width: 320,
-                height: 542,
-                outputfile: 'css/critical.css',
-                filename: 'css/screen.css'
+            custom_options: {
+                options: {
+                    url: 'http://council.squiz/paytax.html',
+                    width: 1300,
+                    height: 900,
+                    outputfile: 'css/criticalcss.inner.css',
+                    filename: 'css/screen.min.css'
+                }
             }
         },
         penthouse: {
             testTask: {
-                outfile: '.tmp/critical.css',
-                css: 'css/screen.css',
-                url: 'http://council.squiz',
+                outfile: 'css/critical.css',
+                css: 'css/screen.min.css',
+                url: 'http://council.squiz.io',
                 width: 1300,
-                height: 900
+                height: 1000
             },
         },
         cssmin: {
